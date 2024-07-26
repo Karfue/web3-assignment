@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment Website</h1>
+        <form id="assignment-form">
+            <div class="input-group">
+                <input type="text" id="public-key" placeholder="Recipient Public Key" required>
+            </div>
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Amount" required>
+            </div>
+            <div class="input-group">
+                <select id="token" required>
+                    <option value="" disabled selected>Select Token</option>
+                    <option value="SOL">SOL</option>
+                    <option value="USDT">USDT</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <button id="connect-wallet" class="connect-btn">Connect Wallet</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.32.0/lib/index.iife.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
